@@ -1,0 +1,48 @@
+apiVersion: v1
+kind: List
+items:
+  - apiVersion: v1
+    kind: PersistentVolume
+    metadata:
+      name: es-node-pv
+      labels:
+        type: local
+    spec:
+      storageClassName: local-storage
+      capacity:
+        storage: 20Gi
+      accessModes:
+        - ReadWriteOnce
+      persistentVolumeReclaimPolicy: Retain
+      hostPath:
+        path: "/media/hdd/es-node"
+  - apiVersion: v1
+    kind: PersistentVolume
+    metadata:
+      name: es-node-pv1
+      labels:
+        type: local
+    spec:
+      storageClassName: local-storage
+      capacity:
+        storage: 20Gi
+      accessModes:
+        - ReadWriteOnce
+      persistentVolumeReclaimPolicy: Retain
+      hostPath:
+        path: "/media/hdd/es-node"
+  - apiVersion: v1
+    kind: PersistentVolume
+    metadata:
+      name: es-node-pv2
+      labels:
+        type: local
+    spec:
+      storageClassName: local-storage
+      capacity:
+        storage: 20Gi
+      accessModes:
+        - ReadWriteOnce
+      persistentVolumeReclaimPolicy: Retain
+      hostPath:
+        path: "/media/hdd/es-node"
