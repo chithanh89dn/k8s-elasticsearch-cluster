@@ -7,7 +7,6 @@ data:
     cluster.name: docker-cluster
     network.host: "0.0.0.0"
     bootstrap.memory_lock: false
-    node.data: true
     discovery.zen.ping.unicast.hosts: ["es-node-0.elasticsearch.default.svc.cluster.local","es-node-1.elasticsearch.default.svc.cluster.local","es-node-2.elasticsearch.default.svc.cluster.local"]
     discovery.zen.ping.unicast.hosts.resolve_timeout: 20s
     xpack.security.enabled: false
